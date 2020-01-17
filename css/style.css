@@ -1,0 +1,332 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:400,700&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Handlee', cursive;
+color rojo: #fa573a
+color azul: #21242e;
+*/
+
+
+.container {
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 2%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 1em;
+}
+/*Flotaciones*/
+
+.row:after{
+    clear: both;
+    content: "";
+    height:0 ;
+    display: block;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Inicio Header*/
+
+header .nav_top{
+background-color: #21242e;
+color: white;
+padding: 20px 0;
+}
+
+header .nav_top .container div{
+    float: left;
+    width: 25%;
+}
+
+header .nav_top .container div a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+header .nav_top a span{
+    display: none;
+}
+header .nav_top a i{
+    color: #fa573a;
+}
+header .nav_top .container div:nth-child(3), header .nav_top .container div:nth-last-child(1){
+text-align: right;
+}
+
+/* Inicio Nav */
+
+header nav{
+    padding: 20px 3%;
+}
+header .hamburguesa{
+    display: block;
+    float: right;
+}
+header .hamburguesa div{
+    border-top: 2px solid #aaa;
+    width: 1.875em;
+    margin-bottom: 0.625em;
+}
+header nav .logo{
+    float: left;
+    width: 100px;
+}
+header nav .menu {
+    padding-top: 60px;
+}
+header nav .menu li {
+    padding: 1.250em;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+header nav .menu li:last-child{
+    border: 0;
+}
+header nav .menu li a{
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+}
+header nav .menu li a.activo, header nav .menu li a:hover {
+    color: #fa573a;
+}
+
+/*Inicio Hero*/
+
+.hero{
+    background-image: url(../images/fondo.jpg);
+    height: 37em;
+    background-size: cover;
+    background-position: bottom center;
+    background-color: #777;
+    background-blend-mode: multiply;
+}
+.hero>div{
+    color: white;
+    padding: 15% 3%;
+}
+.hero h1{
+    font-size: 2.5em;
+    font-family: "Handlee", cursive;
+}
+.hero h2{
+    color: #fa573a;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+.hero p{
+    font-size: 1.15em;
+    color: white;
+}
+.boton{
+    display: inline-block;
+    background-color: #fa573a;
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    margin: 1em 0;
+    border: 1px solid #fa573a;
+}
+.boton:hover{
+    background-color: transparent;
+    color:#fa573a;
+    border: 1px solid #fa573a;
+}
+.boton:hover i{
+    transform: translateX(5px);
+    transition: transform 1s;
+}
+.hero .social li{
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1em;
+}
+.hero .social li a{
+    color: white;
+    text-decoration: none;
+}
+/*MAIN*/
+main section.container{
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+}
+main section h2{
+    color: #fa573a;
+    font-family: "Handlee", cursive;
+    font-size: 2em;
+    text-align: center;
+}
+main section h2 span{
+    color: #fa573a;
+}
+main section .underline{
+    position: relative;
+    width: 115px;
+    color: #fa573a;
+    margin: 0 auto;
+}
+main section .underline hr{
+    border-color: #fa573a;
+    position: absolute;
+    width: 100%;
+    top: -1px;
+}
+main section .underline span{
+    display: block;
+    text-align: center;
+    color: #fa573a;
+    font-weight: bold;
+}
+main section .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .flex article {
+    width: 100%;
+    padding: 1.825em 1em;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 1em;
+}
+main section .flex article:last-child{
+    border-bottom: 0px;
+    width: 100%;
+}
+main section article div i{
+    color: red;
+    font-size: 2em;
+    border: 2px solid #fa573a;
+    padding: .8rem;
+}
+main section article div .fa-truck{
+    transform: rotateY(180deg);
+}
+main section article h3{
+    font-weight: 700;
+    margin: 1em 0;
+}
+main section .enlace {
+    text-decoration: none;
+    color: #fa573a;
+    margin-top: 1em;
+    display: block;
+}
+main section .enlace:hover i{
+    margin-left: 10px;
+    transition: 0.5s;
+}
+main section .columna{
+    width: 100%;
+    margin: 1.25em 0;
+}
+main section .imagen{
+    width: 85%;
+    margin: 0 auto;
+}
+main section .imagen .marco{
+    border: 3px solid #fa573a;
+    background-color: transparent;
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+main section .imagen img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+  
+}
+main section .imagen:hover .marco, main section .imagen:hover img{
+    transform: rotateZ(0deg);  
+}
+main section .container{
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+}
+/*Article*/
+
+main section h3{
+    font-weight: 700;
+}
+main section h4{
+    margin: 0.5em 0;
+    color: #fa573a;
+}
+p{
+    color: #555;
+}
+footer{
+    background-color: #21242e;
+    padding: 1.125em;
+}
+footer p{
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+@media(min-width: 48.063em)
+{
+    header .nav_top a span{
+        display: inline;
+        font-size: 70%;
+    }
+    main .flex article {
+        width: 50%;
+        padding: 1.825em 1em;
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+    }
+    main section .underline {
+        margin-bottom: 2em;
+    }
+}
+@media(min-width:62.750em){
+    header .hamburguesa{
+        display: none;
+        float: none;
+    }
+    header nav .menu {
+        padding-top: 0px;
+        float: right;
+    }
+    header nav .menu li {
+        display: inline-block;
+        padding: 0.5em 1.250em;
+        text-align: left;
+        border-bottom: 0px;
+    }
+    header nav .menu li:last-child{
+        padding: 0;
+    }
+    main section .columna{
+        width: 50%;
+        margin: 1.25em 0;
+    }
+}
+@media(min-width:75.0625em){
+    main .flex article {
+        width: 33.33%;
+    }
+    main .flex article:last-child{
+        width: 33.33%;
+    }
+    .hero>div{
+        color: white;
+        padding: 7% 3%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
