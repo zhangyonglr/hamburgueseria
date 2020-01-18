@@ -39,6 +39,9 @@ img{
     height: auto;
     display: block;
 }
+p{
+    color: #555;
+}
 
 /*Inicio Header*/
 
@@ -109,7 +112,7 @@ header nav .menu li a.activo, header nav .menu li a:hover {
 /*MAIN*/
 
 
-/main section.container{
+main section.container{
     padding-top: 3.125em;
     padding-bottom: 3.125em;
 }
@@ -153,7 +156,8 @@ main section article h3{
     margin: 1em 0;
 }
 main section article h4{
-    margin: 1em 0;
+    margin: 0.5em 0;
+    color: #fa573a;
 }
 main section .enlace {
     text-decoration: none;
@@ -164,18 +168,6 @@ main section .enlace {
 main section .enlace:hover i{
     margin-left: 10px;
     transition: 0.5s;
-}
-/*Article*/
-
-main section h3{
-    font-weight: 700;
-}
-main section h4{
-    margin: 0.5em 0;
-    color: #fa573a;
-}
-p{
-    color: #555;
 }
 
 /*Footer*/
