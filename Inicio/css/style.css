@@ -109,7 +109,7 @@ header nav .menu li a.activo, header nav .menu li a:hover {
 /*Inicio Hero*/
 
 .hero{
-    background-image: url(../images/fondo.jpg);
+    background-image: url(../../images/fondo.jpg);
     height: 37em;
     background-size: cover;
     background-position: bottom center;

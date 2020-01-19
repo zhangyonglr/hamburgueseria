@@ -7,8 +7,9 @@ font-family: 'Handlee', cursive;
 color rojo: #fa573a
 color azul: #21242e;
 */
-
-
+body{
+    background-color: black;
+}
 .container {
     max-width: 1100px;
     margin:0 auto;
@@ -39,23 +40,20 @@ img{
     height: auto;
     display: block;
 }
-p{
-    color: #555;
-}
 
 /*Inicio Header*/
 
 header .nav_top{
-    background-color: #21242e;
-    color: white;
-    padding: 20px 0;
-    }
-    
+background-color: #21242e;
+color: white;
+padding: 20px 0;
+}
+
 header .nav_top .container div{
     float: left;
     width: 25%;
 }
-    
+
 header .nav_top .container div a{
     color: white;
     text-decoration: none;
@@ -110,14 +108,12 @@ header nav .menu li a.activo, header nav .menu li a:hover {
 }
 
 /*MAIN*/
-
-
 main section.container{
     padding-top: 3.125em;
     padding-bottom: 3.125em;
 }
 main section h2{
-    color: black;
+    color: white;
     font-family: "Handlee", cursive;
     font-size: 2em;
     text-align: center;
@@ -143,21 +139,45 @@ main section .underline span{
     color: #fa573a;
     font-weight: bold;
 }
+main section .underline2{
+    width: 115px;
+    color: white;
+    top: 1px;
+    margin: 0 auto;
+}
+main section .underline2 hr{
+    border-color: white;
+    position:initial;
+    width: 100%;
+    top: 1px;
+}
+
 main section .flex{
     display: flex;
     flex-wrap: wrap;
 }
+main .container .menu li {
+    padding: .5em;
+    text-align: left;
+}
+main .container .menu li a{
+    color: #aaa;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+main .container .menu li a.activo, main .container .menu li a:hover {
+    color: #fa573a;
+}
 main .flex article {
     width: 100%;
     padding: 1.825em 1em;
+    margin-bottom: 1em;
 }
+
 main section article h3{
     font-weight: 700;
     margin: 1em 0;
-}
-main section article h4{
-    margin: 0.5em 0;
-    color: #fa573a;
 }
 main section .enlace {
     text-decoration: none;
@@ -169,9 +189,25 @@ main section .enlace:hover i{
     margin-left: 10px;
     transition: 0.5s;
 }
+main section .columna{
+    width: 100%;
+    margin: 1.25em 0;
+}
 
-/*Footer*/
+/*Article*/
 
+main section h3{
+    font-weight: 700;
+    color: white;
+}
+main section h3 span{
+    font-weight: 700;
+    margin-left: 2rem;
+    color: #fa573a;
+}
+p{
+    color: white;
+}
 footer{
     background-color: #21242e;
     padding: 1.125em;
@@ -189,13 +225,11 @@ footer a{
         display: inline;
         font-size: 70%;
     }
-  
     main .flex article {
         width: 50%;
         padding: 1.825em 1em;
         border-bottom: 0px;
     }
-    
     main section .underline {
         margin-bottom: 2em;
     }
@@ -222,8 +256,18 @@ footer a{
         width: 50%;
         margin: 1.25em 0;
     }
-    main section .flex{
-        display: flex;
-        flex-wrap: nowrap;
+}
+@media(min-width:75.0625em){
+    main .flex article {
+        width: 33.33%;
+    }
+    main .flex article:last-child{
+        width: 33.33%;
+    }
+    .hero>div{
+        color: white;
+        padding: 7% 3%;
+        max-width: 1100px;
+        margin: 0 auto;
     }
 }
